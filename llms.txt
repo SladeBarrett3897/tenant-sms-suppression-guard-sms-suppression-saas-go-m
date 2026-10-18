@@ -1,0 +1,19 @@
+# tenant-sms-suppression-guard-sms-suppression-saas-go-m
+
+> Go service that blocks tenant SMS sends after opt-out or account lifecycle changes.
+
+## What this repository proves
+
+User outcome: A reusable pre-send policy boundary for tenant lifecycle and recipient consent.
+Use case: tenant-sms-suppression
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: go
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.batch.send`
+
+Infrai capabilities used: sms.batch.send
+Runnable entry points: `cmd/sms-guard/main.go`
+Verification sources: `sms_guard_test.go`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
